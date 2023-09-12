@@ -36,7 +36,7 @@ const StartOnDate = ({
             onChange={(event) => {
               const editedEvent = {
                 target: {
-                  value: event.target.value,
+                  value: event.target.value || new Date(),
                   name: 'start.onDate.date',
                 },
               };
