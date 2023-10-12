@@ -1,5 +1,5 @@
 const computeWeekStartDay = (data, rruleObj) => {
-  if (!rruleObj.wkst) {
+  if (data.options.weekStartsOnSunday) {
     return data.options.weekStartsOnSunday;
   }
   return rruleObj.wkst === 6;
